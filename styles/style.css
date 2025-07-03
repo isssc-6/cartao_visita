@@ -1,0 +1,68 @@
+@font-face {
+       font-family: 'Addington';
+       src: url('fonts\AddingtonCF-Bold.ttf') format('ttf'); 
+}
+
+
+body{
+    background-color: #8a807c;
+    margin: 0px;
+}
+
+header{
+    background-color: #8b6b61;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 25px;
+    height: 25px;
+}
+
+#text-cabecalho{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+#cartao-pessoal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1b392;
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 6px 6px gray;
+}
+
+#minha-foto{
+    width: 200px;
+    height: 200px;
+}
+#texto{
+    font-family: 'Addington', sans-serif;
+    color: #4b443e;
+}
+
+footer{
+    background-color: #8b6b61;  
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}

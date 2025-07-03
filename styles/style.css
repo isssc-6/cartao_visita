@@ -59,6 +59,11 @@ align-items: center;
     color: #4b443e;
 }
 
+#contato_info{
+    background-color: #d1b392
+}
+
+
 footer{
     background-color: #8b6b61;  
     bottom: 0;
@@ -66,3 +71,4 @@ footer{
     width: 100%;
     text-align: center;
 }
+

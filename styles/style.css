@@ -63,8 +63,8 @@ ul li a {
   margin: 20px 0;
   padding: 10px 20px;
   text-decoration: none;
-  color: #262626;
-  font-size: medium;
+  color: #E6DCCF;
+  font-size: large ;
   font-weight: 600;
   transition: 0.5s;
   /* Transição suave para hover */
@@ -127,7 +127,19 @@ ul li a:hover::after {
   background-image: url(https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
   background-size: cover;
   border-radius: 3rem;
+  margin-bottom: 40px;
 }
+
+
+#sobre-mim {
+  background-image: url('../img/placeholder_about_me.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 3rem;
+  height: 400px; /* importante para a imagem aparecer */
+}
+
+
 
 /* Container para o texto do cabeçalho */
 #text-cabecalho {
@@ -154,7 +166,7 @@ ul li a:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: right;
 }
 
 /* Terceiro container - layout flexível centralizado */
@@ -192,13 +204,11 @@ ul li a:hover::after {
 
 /* Estilo do conteúdo principal */
 .content2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
+  position: absolute;
+  width: 1000px;
   border-radius: 5px;
-  padding: 10px;
-}
+  padding: 30px;
+  color: #E6DCCF;}
 
 /* Estilo do conteúdo principal */
 .content3 {
@@ -235,6 +245,13 @@ ul li a:hover::after {
   font-family: 'Addington', sans-serif;
   color: #4b443e;
 }
+
+#texto2 {
+  font-family: 'Addington', sans-serif;
+  color: #E6DCCF;
+  font-weight: bold;
+}
+
 
 /* Estilo da seção de informações de contato */
 #contato_info {

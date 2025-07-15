@@ -1,0 +1,268 @@
+/* Define uma fonte personalizada chamada 'Addington' */
+@font-face {
+  font-family: 'Addington';
+  src: url('fonts\AddingtonCF-Bold.ttf') format('ttf');
+
+  font-family: 'Raleway';
+  src: url('fonts\Raleway-Bold.ttf') format('tff');
+}
+
+
+
+h2 {
+  font-family: Raleway,sans-serif;
+}
+
+h3 {
+  font-family: Raleway,sans-serif;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+  background-color: #ebdfce;
+  /* Cor de fundo cinza/marrom */
+  margin: 0px;
+  /* Remove margens padrão */
+}
+
+p {
+  font-family: Addington,sans-serif;
+}
+
+/* Estilo do cabeçalho fixo no topo */
+header {
+  background-color: #8b6b61;
+  /* Cor de fundo marrom */
+  padding: 10px;
+  top: 0;
+  position: fixed;
+  /* Fixa o cabeçalho no topo */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo da lista de navegação */
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  /* Remove marcadores de lista */
+}
+
+/* Estilo dos links de navegação */
+ul li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  /* Transforma texto em maiúsculas */
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #E6DCCF;
+  font-size: large ;
+  font-weight: 600;
+  transition: 0.5s;
+  /* Transição suave para hover */
+  z-index: 1;
+}
+
+/* Efeito de borda animada no hover */
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/* Efeito de fundo animado no hover */
+ul li a::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+/* Efeitos quando o mouse passa sobre os links */
+ul li a:hover {
+  color: #fff;
+}
+
+ul li a:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+ul li a:hover::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* Estilo do logo */
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo de um elemento com imagem de fundo (possivelmente um cartão) */
+#cartao {
+  background-image: url(https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+  background-size: cover;
+  border-radius: 3rem;
+  margin-bottom: 40px;
+}
+
+
+#sobre-mim {
+  background-image: url('../img/placeholder_about_me.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 3rem;
+  height: 400px; /* importante para a imagem aparecer */
+}
+
+
+
+/* Container para o texto do cabeçalho */
+#text-cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Container principal - layout flexível centralizado */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+   /* O gato vai junto */
+}
+
+/* Segundo container - layout em coluna */
+.container2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+
+/* Terceiro container - layout flexível centralizado */
+.container3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quarto container - layout flexível centralizado */
+.container4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo do conteúdo principal */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: x-large;
+  padding-left: 100px;
+}
+
+/* Estilo do conteúdo principal */
+.content2 {
+  position: absolute;
+  width: 1000px;
+  border-radius: 5px;
+  padding: 30px;
+  color: #E6DCCF;}
+
+/* Estilo do conteúdo principal */
+.content3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Estilo do segundo conteúdo */
+.content4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(31, 21%, 60%);
+  width: 70%;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 6px 6px gray;
+}
+
+/* Estilo de uma imagem (provavelmente uma foto) */
+#minha-foto {
+  width: 200px;
+  height: 200px;
+}
+
+/* Estilo de texto com a fonte personalizada */
+#texto {
+  font-family: 'Addington', sans-serif;
+  color: #4b443e;
+}
+
+#texto2 {
+  font-family: 'Addington', sans-serif;
+  color: #E6DCCF;
+  font-weight: bold;
+}
+
+
+/* Estilo da seção de informações de contato */
+#contato_info {
+  background-color: #d1b392
+}
+
+/* Estilo do rodapé fixo */
+footer {
+  background-color: #8b6b61;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}

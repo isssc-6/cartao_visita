@@ -372,12 +372,12 @@ ul li a:hover::after {
 }
 
 
-.botao{
+.botao {
   color: #E6DCCF;
   text-decoration: none;
-  font-family: Raleway, sans-serif ;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
-  background-color: #882d08; 
+  background-color: #882d08;
   padding: 15px 15px 15px 15px;
   border: None;
   cursor: pointer;
@@ -389,23 +389,25 @@ ul li a:hover::after {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.botao:active{
+
+.botao:active {
   opacity: 0.5;
   transform: scale(0.95);
 }
 
-.Agende{
+.Agende {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.wpp{
+
+.wpp {
   vertical-align: -8px;
   width: 30px;
   height: 30px;
 }
- 
+
 
 /* Estilo do segundo conteúdo */
 .content4 {

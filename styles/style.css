@@ -10,11 +10,11 @@
 
 
 h2 {
-  font-family: Raleway,sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 h3 {
-  font-family: Raleway,sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 /* Estilos gerais do corpo da página */
@@ -26,7 +26,7 @@ body {
 }
 
 p {
-  font-family: Addington,sans-serif;
+  font-family: Addington, sans-serif;
 }
 
 /* Estilo do cabeçalho fixo no topo */
@@ -65,7 +65,7 @@ ul li a {
   padding: 10px 20px;
   text-decoration: none;
   color: #E6DCCF;
-  font-size: large ;
+  font-size: large;
   font-weight: 600;
   transition: 0.5s;
   /* Transição suave para hover */
@@ -138,7 +138,8 @@ ul li a:hover::after {
   background-position: center;
   border-bottom-right-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  height: 600px; /* importante para a imagem aparecer */
+  height: 600px;
+  /* importante para a imagem aparecer */
 }
 
 
@@ -158,7 +159,7 @@ ul li a:hover::after {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-   /* O gato vai junto */
+  /* O gato vai junto */
 }
 
 /* Segundo container - layout em coluna */
@@ -174,11 +175,11 @@ ul li a:hover::after {
 /* Terceiro container - layout flexível centralizado */
 .container3 {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 /* Quarto container - layout flexível centralizado */
@@ -213,6 +214,12 @@ ul li a:hover::after {
   color: #E6DCCF;
 }
 
+#contents3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /* Estilo do conteúdo principal */
 .cards_container {
   max-width: 1500px;
@@ -223,7 +230,8 @@ ul li a:hover::after {
   justify-content: center;
   padding: 20px;
 }
-.card{
+
+.card {
   background-color: #fcf6ed;
   border: solid;
   border: 1px;
@@ -231,23 +239,174 @@ ul li a:hover::after {
   width: 300px;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0px 5px 20px rgb(0, 0, 0, 0.20);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  transition: transform 0,2s;
+  transition: transform 0, 2s;
 }
-.card:hover{
-  transform: scale(1.05);
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-.card h3{
+
+.card h3 {
   margin-top: 0;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.card p{
+
+.card p {
   margin: 10px 0 0;
   font-size: 25px;
 }
+
+.Abordagens {
+  color: #47352f;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content3_1,
+.content3_2 {
+  color: #47352f;
+  ;
+  font-weight: bold;
+  flex: 1;
+  max-width: 500px;
+  border: solid;
+  border-color: #47352f;
+  border-width: 4px;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.content3_1:hover,
+.content3_2:hover {
+  cursor: pointer;
+  border-color: #882d08;
+  transition: 2s ease;
+
+  .p {
+    font-size: larger;
+    transition: 2s;
+  }
+}
+
+.content3_1 {
+  margin-right: 40px;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.faq h2 {
+  color: #4b443e;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.faq-item {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  background-color: #fcf6ed;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+  color: #47352f;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 25px 25px 25px 25px;
+  background-color: transparent;
+  transition: color 0.15s;
+}
+
+.faq-question:hover {
+  color: #882d08;
+}
+
+.faq-answer {
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, padding 0.3s ease;
+  padding: 0;
+}
+
+.faq-answer.open {
+  padding: 0 25px 25px 25px;
+  max-height: 300px;
+  border-radius: 0 0 10px 10px;
+}
+
+.plus {
+  float: right;
+  font-size: 24px;
+}
+
+
+.botao{
+  color: #E6DCCF;
+  text-decoration: none;
+  font-family: Raleway, sans-serif ;
+  font-weight: bold;
+  background-color: #882d08; 
+  padding: 15px 15px 15px 15px;
+  border: None;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.botao:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.botao:active{
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.Agende{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wpp{
+  vertical-align: -8px;
+  width: 30px;
+  height: 30px;
+}
+ 
+
 /* Estilo do segundo conteúdo */
 .content4 {
   display: flex;
@@ -258,7 +417,6 @@ ul li a:hover::after {
   width: 70%;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 6px 6px gray;
 }
 
 /* Estilo de uma imagem (provavelmente uma foto) */

@@ -442,6 +442,13 @@ ul li a:hover::after {
   transform: scale(0.95);
 } 
 
+.whatsapp-button {
+  position:fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: green;
+}
+
 .Agende2 {
   margin-top: 30px;
   width: 100%;

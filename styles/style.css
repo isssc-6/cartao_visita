@@ -1,38 +1,47 @@
 /* Define uma fonte personalizada chamada 'Addington' */
 @font-face {
   font-family: 'Addington';
-  src: url('fonts\AddingtonCF-Bold.ttf') format('ttf');
+  src: url('../fonts/AddingtonCF-Regular.ttf') format('truetype');
+}
 
+@font-face {
   font-family: 'Raleway';
-  src: url('fonts\Raleway-Bold.ttf') format('tff');
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-MediumItalic.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 
-
-h2 {
-  font-family: Raleway, sans-serif;
-}
-
-h3 {
-  font-family: Raleway, sans-serif;
+h2, h3 {
+  font-family: Addington, serif;
 }
 
 /* Estilos gerais do corpo da página */
 body {
-  background-color: #ebdfce;
-  /* Cor de fundo cinza/marrom */
-  margin: 0px;
+  background:
+    linear-gradient(#ebdfced8, #ebdfced8),
+    url('../img/fundo-ruidoso.jpg') repeat;
+  margin: 0;
   /* Remove margens padrão */
+  overflow-x: hidden;
   
 }
 
 p {
-  font-family: Addington, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 /* Estilo do cabeçalho fixo no topo */
 header {
-  background-color: #8b6b61;
+  background-color: #704d49;
   /* Cor de fundo marrom */
   padding: 10px;
   top: 0;
@@ -73,21 +82,6 @@ ul li a {
   z-index: 1;
 }
 
-/* Efeito de borda animada no hover */
-ul li a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid #262626;
-  border-bottom: 2px solid #262626;
-  transform: scaleY(2);
-  opacity: 0;
-  transition: 0.8s;
-}
-
 /* Efeito de fundo animado no hover */
 ul li a::after {
   content: '';
@@ -96,11 +90,12 @@ ul li a::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #262626;
+  background-color: #371a11;
   transform: scale(0);
   opacity: 0;
   transition: 0.3s;
   z-index: -1;
+  border-radius: 20px;
 }
 
 /* Efeitos quando o mouse passa sobre os links */
@@ -126,7 +121,7 @@ ul li a:hover::after {
 
 /* Estilo de um elemento com imagem de fundo (possivelmente um cartão) */
 #cartao {
-  background-image: url(https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+  background-image: url('../img/_DSC7225.jpg');
   background-size: cover;
   border-radius: 3rem;
   margin-bottom: 40px;
@@ -134,12 +129,11 @@ ul li a:hover::after {
 
 
 #sobre {
-  background-image: url('../img/placeholder_about_me.png');
+  background-image: url('../img/sobremim3.jpg');
   background-size: cover;
   background-position: center;
-  border-bottom-right-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-  height: 600px;
+
+  height: 1000px;
   /* importante para a imagem aparecer */
 }
 
@@ -191,6 +185,7 @@ ul li a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 /* Estilo do conteúdo principal */
@@ -201,24 +196,28 @@ ul li a:hover::after {
   align-items: start;
   width: 30%;
   border-radius: 5px;
-  padding: 10px;
-  font-size: x-large;
-  padding-left: 100px;
+  padding-left: 200px;
+}
+.content h2{
+  font-size: 70px;
+  margin-bottom: 0px;
+}
+.content h3{
+  font-size: 30px;
+}
+#texto{
+  font-size: 20px;
+  max-width: 500px;
 }
 
 /* Estilo do conteúdo principal */
 .content2 {
+  margin-left: 200px;
+  font-size: 1.2rem;
   position: absolute;
-  width: 1000px;
-  border-radius: 5px;
+  width: 500px;
   padding: 30px;
-  color: #E6DCCF;
-}
-
-#contents3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    color: black;
 }
 
 /* Estilo do conteúdo principal */
@@ -233,7 +232,7 @@ ul li a:hover::after {
 }
 
 .card {
-  background-color: #fcf6ed;
+  background-color: rgb(252, 246, 237);
   border: solid;
   border: 1px;
   height: 300px;
@@ -248,7 +247,7 @@ ul li a:hover::after {
 .card:hover {
   transform: scale(1.02);
   transition: 0.2s;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0.2, 0.4);
 }
 
 .card h3 {
@@ -263,12 +262,18 @@ ul li a:hover::after {
   font-size: 25px;
 }
 
-.Abordagens {
+.abordagens {
   color: #47352f;
   text-align: center;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2.2rem;
   margin-bottom: 50px;
+}
+
+.abordagens_cards{
+  color: #47352f;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 @keyframes fadeIn {
@@ -283,14 +288,20 @@ ul li a:hover::after {
   }
 }
 
+#content3 {
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .content3_1,
 .content3_2 {
-  color: #47352f;
-  font-weight: bold;
-  flex: 1;
+  flex: 1 1 300px;
   max-width: 500px;
   border: solid;
-  border-color: #47352f;
+  border-color: transparent;
   border-width: 4px;
   border-radius: 20px;
   padding: 20px;
@@ -301,11 +312,21 @@ ul li a:hover::after {
 .content3_1:hover,
 .content3_2:hover {
   cursor: pointer;
-  border-color: #882d08;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-color: #47352f;
+  transition: all 0.5s ease;
 }
 
 .content3_1 {
   margin-right: 40px;
+  background: url('../assets/puzzle-toy-svgrepo-com.svg') no-repeat bottom 20px right 20px;
+  background-size: 40px;
+}
+
+.content3_2 {
+  margin-right: 40px;
+  background: url('../assets/woman-thinking-svgrepo-com.svg') no-repeat bottom 20px right 20px;
+  background-size: 40px;
 }
 
 .faq {
@@ -393,7 +414,7 @@ ul li a:hover::after {
   font-size: 24px;
 }
 
-.botao {
+.botao,.botao2 {
   color: #E6DCCF;
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -411,15 +432,26 @@ ul li a:hover::after {
   transform: scale(1.1);
   transition: 0.5s;
 }
+.botao2:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 .botao:active {
   opacity: 0.5;
   transform: scale(0.95);
+} 
+
+.Agende2 {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  padding: 16px;
 }
 
 .Agende {
-  width: 100%;
   background-color: #dcc7ab;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,7 +518,7 @@ ul li a:hover::after {
 }
 /* Estilo do rodapé fixo */
 footer {
-  background-color: #8b6b61;
+  background-color: #704d49;
   bottom: 0;
   position: sticky;
   width: 100%;

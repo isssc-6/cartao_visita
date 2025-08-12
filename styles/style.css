@@ -14,6 +14,29 @@
   src: url('../fonts/PlayfairDisplay-MediumItalic.ttf') format('truetype');
 }
 
+.whatsapp-overlay {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background-color: #25d366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 55px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-overlay:hover {
+  transform: scale(1.1);
+}
+
+.wpp-overlay {
+  width: 3.65rem;
+  height: 3.65rem;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -388,6 +411,8 @@ ul li a:hover::after {
 
 .faq-question:hover {
   color: #882d08;
+  transform:scale(1.01);
+  transition: 0.2s
 }
 
 .faq-answer {
@@ -441,13 +466,6 @@ ul li a:hover::after {
   opacity: 0.5;
   transform: scale(0.95);
 } 
-
-.whatsapp-button {
-  position:fixed;
-  right: 20px;
-  bottom: 20px;
-  background-color: green;
-}
 
 .Agende2 {
   margin-top: 30px;

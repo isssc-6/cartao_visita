@@ -1,4 +1,4 @@
-/* Define uma fonte personalizada chamada 'Addington' */
+/* Fontes usadas no Site */
 @font-face {
   font-family: 'Addington';
   src: url('../fonts/AddingtonCF-Regular.ttf') format('truetype');
@@ -14,6 +14,8 @@
   src: url('../fonts/PlayfairDisplay-MediumItalic.ttf') format('truetype');
 }
 
+
+/* Estilo do botão whatsapp */
 .whatsapp-overlay {
   position: fixed;
   bottom: 20px;
@@ -27,27 +29,28 @@
   z-index: 1;
   transition: transform 0.3s ease;
 }
-
+/* Funcionamento do hover do botão whatsapp */
 .whatsapp-overlay:hover {
   transform: scale(1.1);
 }
-
+/* Formatação do botão whatsapp */
 .wpp-overlay {
   width: 3.65rem;
   height: 3.65rem;
 }
 
+/* Define o scroll da página */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 
-
+/* Estilo geral dos títulos secundários */
 h2, h3 {
   font-family: Addington, serif;
 }
 
-/* Estilos gerais do corpo da página */
+/* Estilo geral do corpo da página */
 body {
   background:
     linear-gradient(#ebdfced8, #ebdfced8),
@@ -58,34 +61,33 @@ body {
   
 }
 
+/* Estilo geral dos parágrafos da página */
 p {
   font-family: Raleway, sans-serif;
 }
 
-/* Estilo do cabeçalho fixo no topo */
+/* Estilo do cabeçalho */
 header {
   background-color: #704d49;
-  /* Cor de fundo marrom */
   padding: 10px;
   top: 0;
   position: fixed;
-  /* Fixa o cabeçalho no topo */
   width: 100%;
   display: flex;
   align-items: center;
   z-index: 10;
 }
 
-/* Estilo da lista de navegação */
+/* Estilo da lista do menu de navegação */
 ul {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
+/* Remover marcação padrão da lista */
 ul li {
   list-style: none;
-  /* Remove marcadores de lista */
 }
 
 /* Estilo dos links de navegação */
@@ -93,7 +95,6 @@ ul li a {
   position: relative;
   display: block;
   text-transform: uppercase;
-  /* Transforma texto em maiúsculas */
   margin: 20px 0;
   padding: 10px 20px;
   text-decoration: none;
@@ -101,11 +102,10 @@ ul li a {
   font-size: large;
   font-weight: 600;
   transition: 0.5s;
-  /* Transição suave para hover */
   z-index: 1;
 }
 
-/* Efeito de fundo animado no hover */
+/* Efeito de hover no fundo dos links de navegação */
 ul li a::after {
   content: '';
   position: absolute;
@@ -121,7 +121,7 @@ ul li a::after {
   border-radius: 20px;
 }
 
-/* Efeitos quando o mouse passa sobre os links */
+/* Efeitos hover do mouse */
 ul li a:hover {
   color: #fff;
 }
@@ -142,77 +142,33 @@ ul li a:hover::after {
   height: 40px;
 }
 
-/* Estilo de um elemento com imagem de fundo (possivelmente um cartão) */
-#cartao {
-  background-image: url('../img/_DSC7225.jpg');
-  background-size: cover;
-  border-radius: 3rem;
-  margin-bottom: 40px;
-}
-
-
-#sobre {
-  background-image: url('../img/sobremim3.jpg');
-  background-size: cover;
-  background-position: center;
-
-  height: 1000px;
-  /* importante para a imagem aparecer */
-}
-
-
-
-/* Container para o texto do cabeçalho */
+/* Estilo do texto do Cabeçalho */
 #text-cabecalho {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-/* Container principal - layout flexível centralizado */
-.container {
+/* Background da Página Inicial */
+#inicio {
+  background-image: url('../img/_DSC7225.jpg');
+  background-size: cover;
+  border-radius: 3rem;
+  margin-bottom: 40px;
+}
+
+/* Página Inicial - layout */
+.secao_inicio {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  /* O gato vai junto */
 }
 
-/* Segundo container - layout em coluna */
-.container2 {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: right;
-}
-
-/* Terceiro container - layout flexível centralizado */
-.container3 {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-}
-
-/* Quarto container - layout flexível centralizado */
-.container4 {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-/* Estilo do conteúdo principal */
-.content {
+/* Estilo geral dos textos da Página Inicial */
+.texto_inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,29 +177,39 @@ ul li a:hover::after {
   border-radius: 5px;
   padding-left: 200px;
 }
-.content h2{
+/* Estilo dos títulos da Página Inicial */
+.texto_inicio h2{
   font-size: 70px;
   margin-bottom: 0px;
 }
-.content h3{
+.texto_inicio h3{
   font-size: 30px;
 }
-#texto{
+/* Estilo dos parágrafos da Página Inicial */
+.texto_inicio p{
   font-size: 20px;
   max-width: 500px;
 }
 
-/* Estilo do conteúdo principal */
-.content2 {
-  margin-left: 200px;
-  font-size: 1.2rem;
-  position: absolute;
-  width: 500px;
-  padding: 30px;
-    color: black;
+/* Seção "O que você pode alcançar" - layout */
+.secao_transformacao {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilo do h2 da Seção Transformação*/
+.secao_transformacao h2{
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
 }
 
-/* Estilo do conteúdo principal */
+/* Layout do cards da Seção "O que você pode alcançar" */
 .cards_container {
   max-width: 1500px;
   display: flex;
@@ -251,9 +217,31 @@ ul li a:hover::after {
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
-  padding: 20px;
+
 }
 
+/* Hover dos Cards */
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0.2, 0.4);
+}
+
+/* Estilo dos títulos dos cards  */
+.card h3 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Estilo dos textos dos cards  */
+.card p {
+  margin: 10px 0 0;
+  font-size: 25px;
+}
+
+/* Estilo geral dos cards */
 .card {
   background-color: rgb(252, 246, 237);
   border: solid;
@@ -267,38 +255,103 @@ ul li a:hover::after {
   transition: transform 0, 2s;
 }
 
-.card:hover {
-  transform: scale(1.02);
-  transition: 0.2s;
-  box-shadow: 0 2px 6px rgba(0, 0, 0.2, 0.4);
+/* Seção Sobre Mim - layout */
+.secao_sobre {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
 }
 
-.card h3 {
-  margin-top: 0;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 30px;
+/* Estilo do texto da Seção Sobre Mim*/
+.texto_sobre {
+  margin-left: 200px;
+  font-size: 1.2rem;
+  position: absolute;
+  width: 500px;
+  padding: 30px;
+    color: black;
+}
+/* Background da Seção Sobre Mim*/
+#sobre_mim {
+  background-image: url('../img/sobremim3.jpg');
+  background-size: cover;
+  background-position: center;
+
+  height: 1000px;
+  
 }
 
-.card p {
-  margin: 10px 0 0;
-  font-size: 25px;
-}
+#sobre_min p { margin-bottom: 1em; }
+#sobre_min h2 { margin-bottom: 1em; }
 
-.abordagens {
+/* Layout da Seção Abordagens*/
+.secao_abordagens{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+/* Estilo do h2 da Seção Abordagens*/
+.secao_abordagens h2{
   color: #47352f;
   text-align: center;
   font-weight: bold;
   font-size: 2.2rem;
   margin-bottom: 50px;
 }
-
-.abordagens_cards{
+/* Estilo do h3 da Seção Abordagens*/
+#texto_abordagens h3{
   color: #47352f;
   font-weight: bold;
   font-size: 1.5rem;
 }
-
+/* Estilo da posição do Texto Abordagens*/
+#texto_abordagens {
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/* Estilo da caixa de cada texto em Texto Abordagens*/
+.texto_abordagens_1,
+.texto_abordagens_2 {
+  flex: 1 1 300px;
+  max-width: 500px;
+  border: solid;
+  border-color: transparent;
+  border-width: 4px;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+}
+/* Funcionamento do hover da caixa do Texto Abordagens */
+.texto_abordagens_1:hover,
+.texto_abordagens_2:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-color: #47352f;
+  transition: all 0.5s ease;
+}
+/* Estilo do icone dentro de Texto Abordagens 1*/
+.texto_abordagens_1 {
+  margin-right: 40px;
+  background: url('../assets/puzzle-toy-svgrepo-com.svg') no-repeat bottom 20px right 20px;
+  background-size: 40px;
+}
+/* Estilo do icone dentro de Texto Abordagens 2*/
+.texto_abordagens_2 {
+  margin-right: 40px;
+  background: url('../assets/woman-thinking-svgrepo-com.svg') no-repeat bottom 20px right 20px;
+  background-size: 40px;
+}
+/* Funcionamento da Animação */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -310,48 +363,7 @@ ul li a:hover::after {
     transform: translateY(0);
   }
 }
-
-#content3 {
-  font-size: 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.content3_1,
-.content3_2 {
-  flex: 1 1 300px;
-  max-width: 500px;
-  border: solid;
-  border-color: transparent;
-  border-width: 4px;
-  border-radius: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.content3_1:hover,
-.content3_2:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  border-color: #47352f;
-  transition: all 0.5s ease;
-}
-
-.content3_1 {
-  margin-right: 40px;
-  background: url('../assets/puzzle-toy-svgrepo-com.svg') no-repeat bottom 20px right 20px;
-  background-size: 40px;
-}
-
-.content3_2 {
-  margin-right: 40px;
-  background: url('../assets/woman-thinking-svgrepo-com.svg') no-repeat bottom 20px right 20px;
-  background-size: 40px;
-}
-
+/* Estilo da Seção Faq*/
 .faq {
   background-color: #dcc7ab;
   width: 100%;
@@ -363,38 +375,37 @@ ul li a:hover::after {
   gap: 60px;
   flex-wrap: wrap;
 }
-
-.faq-texto {
+/* Estilo do texto da Seção Faq*/
+.faq_texto {
   flex: 1;
   max-width: 400px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
-.faq-texto h2 {
+/* Formatação do texto h2 da Seção Faq*/
+.faq_texto h2 {
   color: #4b443e;
   font-size: 36px;
   text-align: right;
 }
-
-.faq-conteudo {
+/* Estilo do conteúdo da Seção Faq*/
+.faq_conteudo {
   flex: 1;
   max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-
-.faq-item {
+/* Estilo dos itens da seção faq*/
+.faq_item {
   background-color: #fcf6ed;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
-
-
-.faq-question {
+/* Estilo da questão Seção Faq*/
+.faq_question {
   color: #47352f;
   font-size: 16px;
   font-weight: bold;
@@ -408,14 +419,14 @@ ul li a:hover::after {
   align-items: center;
   transition: color 0.15s;
 }
-
-.faq-question:hover {
+/* Funcionamento do hover da Questão da Seção Faq*/
+.faq_question:hover {
   color: #882d08;
   transform:scale(1.01);
   transition: 0.2s
 }
-
-.faq-answer {
+/* Funcionamento da animação das questões da Seção Faq*/
+.faq_answer {
   background-color: transparent;
   max-height: 0;
   overflow: hidden;
@@ -426,19 +437,19 @@ ul li a:hover::after {
   padding-left: 25px;
   text-align: left;
 }
-
-.faq-answer.open {
+/* Estilo da respostas da Seção Faq*/
+.faq_answer.open {
   padding-top: 0;
   padding-right: 25px;
   padding-bottom: 0;
   padding-left: 25px;
   max-height: 350px;
 }
-
+/* Estilo do icone "+" da Seção Faq*/
 .plus {
   font-size: 24px;
 }
-
+/* Estilo dos Botões */
 .botao,.botao2 {
   color: #E6DCCF;
   text-decoration: none;
@@ -452,29 +463,30 @@ ul li a:hover::after {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
 }
-
+/* Animação do hover Botão1 */
 .botao:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
+/* Animação do hover Botão2 */
 .botao2:hover{
   transform: scale(1.1);
   transition: 0.5s;
 }
-
+/* Animação do Botão Active */
 .botao:active {
   opacity: 0.5;
   transform: scale(0.95);
 } 
-
-.Agende2 {
+/* Estilo do Botão1 */
+.botao_agende_1 {
   margin-top: 30px;
   width: 100%;
   display: flex;
   padding: 16px;
 }
-
-.Agende {
+/* Estilo do Botão2 */
+.botao_agende_2 {
   background-color: #dcc7ab;
   width: 100%;
   display: flex;
@@ -482,7 +494,8 @@ ul li a:hover::after {
   align-items: center;
   padding: 16px;
 }
-.Container5{
+/* Estilo da Seção Contatos */
+.secao_contatos{
   background-color: #fcf6ed;
   border-radius: 20px;
   padding: 30px 40px;
@@ -492,14 +505,17 @@ ul li a:hover::after {
   max-width: 400px;
   margin: 100px auto;
 }
-.Contato {
+/* Formatação da Seção Contatos */
+.contato {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;  
+  gap: 20px;
+  margin-bottom: 30px;  
 }
-.ContatoFT p {
+/* Formatação do texto p do icone Seção Contatos */
+.contato_icone p {
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -507,27 +523,47 @@ ul li a:hover::after {
   display: inline-block;
   vertical-align: middle;
 }
-.ContatoFT{
+/* Formatação do icone da Seção Contatos */
+.contato_icone{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-bottom: 15px;
 }
-.ContatoFT img {
+/* Estilo da imagem do icone */
+.contato_icone img {
   width: 25px;
   height: 25px;
   vertical-align: middle;
   
 }
-.Container5 h2{
+/* Estilo do icone do whatsapp */
+.wpp-overlay{
+  width: 60px;
+  height: 60px;
+}
+/* Estilo do icone do instagram */
+.inst-overlay{
+  width: 60px;
+  height: 60px;
+}
+/* Estilo do icone do email */
+.email-overlay{
+  width: 60px;
+  height: 60px;
+}
+/* Formatação do texto h2 da Seção Contatos */
+.secao_contatos h2{
   margin-bottom: 40px;
   color: rgb(71, 53, 47);
 }
-.Foto_Contato{
+/* Formatação da foto da Seção Vontatos */
+.foto_contato{
   margin-top: 20px;
 }
-.Foto_Contato img{
+/* Estilo da foto da Seção Contatos */
+.foto_contato img{
   width: 120px;
   height: 120px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -536,6 +572,7 @@ ul li a:hover::after {
   border: 4px;
   border:white;
 }
+/* Formatação do Botão Whatsapp */
 .wpp {
   vertical-align: -8px;
   width: 30px;
@@ -554,3 +591,4 @@ footer {
 html,body{
   overflow-x: hidden;
 }
+

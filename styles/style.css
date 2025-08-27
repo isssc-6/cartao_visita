@@ -496,7 +496,6 @@ ul li a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
 }
 
 .meus_contatos h2 {
@@ -614,20 +613,6 @@ html,body{
   border-radius: 2px;
 }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 60px;
-  left: 20px; /* Alinha com o botão à esquerda */
-  background-color: #704d49;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1000;
-  min-width: 200px;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 10px 0;
-}
-
 /* --- RESPONSIVIDADE --- */
 
 /* Tablets */
@@ -636,8 +621,6 @@ html,body{
     flex-direction: column;
     padding: 10px 20px;
   }
-
-  
 
   #text-cabecalho ul {
     flex-wrap: wrap;
@@ -703,16 +686,18 @@ html,body{
     /* Cor de fundo do menu */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     /* Sombra para destaque */
-    z-index: 1;
+    z-index: 1000;
     /* Garante que o menu fique por cima de outros elementos */
     min-width: 160px;
     /* Largura mínima para o menu */
     list-style: none;
     /* Remove os marcadores da lista */
-    padding: 0;
-    /* Remove o padding padrão da ul */
     margin: 0;
     /* Remove o margin padrão da ul */
+    border-radius: 8px;
+    top: 60px;
+    left: 20px;
+    overflow: hidden;
   }
 
   .dropdown:hover .dropdown-menu{
@@ -799,13 +784,10 @@ html,body{
     padding-right: 0.7rem;
   }
 
-  #texto_abordagens p {
-    font-size: 0.8rem;
-  }
-
+  
   .secao_abordagens {
-      padding-top: 4rem;
-      padding-bottom: 5rem;
+      padding-top: 9rem;
+      padding-bottom: 11rem;
   }
 
   .faq_conteudo {
@@ -813,4 +795,11 @@ html,body{
     padding-right: 2rem;
   }
 
+  .faq_texto{
+    padding-right: 2.5rem;
+  }
+
+  .botao_agende_2{
+    padding-bottom: 2rem;
+  }
 }

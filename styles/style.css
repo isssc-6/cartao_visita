@@ -307,6 +307,7 @@ ul li a:hover::after {
   font-size: 2.2rem;
   margin-bottom: 50px;
 }
+
 /* Estilo do h3 da Seção Abordagens*/
 #texto_abordagens h3{
   color: #47352f;
@@ -345,13 +346,13 @@ ul li a:hover::after {
 /* Estilo do icone dentro de Texto Abordagens 1*/
 .texto_abordagens_1 {
   margin-right: 40px;
-  background: url('../assets/puzzle-toy-svgrepo-com.svg') no-repeat bottom 20px right 20px;
+  background: url('../assets/puzzle-toy-svgrepo-com.svg') no-repeat bottom 0px right 0px;
   background-size: 40px;
 }
 /* Estilo do icone dentro de Texto Abordagens 2*/
 .texto_abordagens_2 {
   margin-right: 40px;
-  background: url('../assets/woman-thinking-svgrepo-com.svg') no-repeat bottom 20px right 20px;
+  background: url('../assets/woman-thinking-svgrepo-com.svg') no-repeat bottom 0px right 00px;
   background-size: 40px;
 }
 /* Funcionamento da Animação */
@@ -579,11 +580,55 @@ html,body{
   overflow-x: hidden;
 }
 
-/* --- RESPONSIVIDADE --- */
-
-.dropdown-trigger{
-  display: none;
+.dropdown {
+  position: relative;
+  /* Define o contexto de posicionamento para os itens internos */
+  display: inline-block;
+  /* Garante que o dropdown tenha o tamanho do seu conteúdo */
 }
+
+.dropdown-trigger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px; /* Posiciona à esquerda */
+  top: 20px;
+  z-index: 1000;
+}
+
+.dropdown-trigger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #E6DCCF;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 20px; /* Alinha com o botão à esquerda */
+  background-color: #704d49;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  min-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+/* --- RESPONSIVIDADE --- */
 
 /* Tablets */
 @media (max-width: 1024px) {
@@ -591,6 +636,8 @@ html,body{
     flex-direction: column;
     padding: 10px 20px;
   }
+
+  
 
   #text-cabecalho ul {
     flex-wrap: wrap;
@@ -617,20 +664,34 @@ html,body{
 
 /* Celulares */
 @media (max-width: 768px) {
+  
+  /* Mostre o botão dropdown em mobile */
   .dropdown {
-    position: relative;
-    /* Define o contexto de posicionamento para os itens internos */
-    display: inline-block;
-    /* Garante que o dropdown tenha o tamanho do seu conteúdo */
+    position: absolute;
+    left: 15px;
+    top: 15px;
   }
-
+  
   .dropdown-trigger {
-    /* Estilo para o botão que abre o menu, por exemplo */
-    display: block;
-    background-color: #f1f1f1;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    display: flex;
+  }
+  
+  /* Ajuste o header para centralizar a logo */
+  header {
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+    min-height: 80px;
+  }
+  
+  #logo {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* Ajuste o texto inicial para não ficar embaixo do menu */
+  .texto_inicio {
+    padding-top: 60px;
   }
 
   .dropdown-menu {
@@ -654,25 +715,8 @@ html,body{
     /* Remove o margin padrão da ul */
   }
 
-  .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown-menu{
     display: block;
-    /* Exibe o menu quando o mouse está sobre o contêiner */
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  #logo {
-    padding-left: 0;
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  #text-cabecalho ul {
-    flex-direction: column;
-    gap: 10px;
   }
 
   .texto_inicio {
@@ -748,4 +792,25 @@ html,body{
     width: 100px;
     height: 100px;
   }
+
+
+  #texto_abordagens {
+    padding-left: 3rem;
+    padding-right: 0.7rem;
+  }
+
+  #texto_abordagens p {
+    font-size: 0.8rem;
+  }
+
+  .secao_abordagens {
+      padding-top: 4rem;
+      padding-bottom: 5rem;
+  }
+
+  .faq_conteudo {
+    width: 70%;
+    padding-right: 2rem;
+  }
+
 }

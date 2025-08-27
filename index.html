@@ -11,22 +11,25 @@
 
 <body>
     <!-- Botão Flutuante do Whatsapp -->
-    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!" class="whatsapp-overlay"
-    target="_blank"><img class="wpp-overlay" src="img/whatsapp.png" alt="WhatsApp">
+    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!"
+        class="whatsapp-overlay" target="_blank"><img class="wpp-overlay" src="img/whatsapp.png" alt="WhatsApp">
     </a>
     <!-- Cabeçalho -->
     <header>
         <img id="logo" src="img/logo.png" alt="Logo">
         <nav id="text-cabecalho">
             <!-- Menu de Navegação -->
-            <ul>
-                <li><a href="#inicio">Página Inicial</a></li>
-                <li><a href="#transformacoes">O que você pode alcançar</a></li>
-                <li><a href="#sobre_mim">Sobre mim</a></li>
-                <li><a href="#abordagens">Abordagens</a></li>
-                <li><a href="#sobre_trabalho">Sobre meu trabalho</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="dropdown-trigger">Menu Principal</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#inicio">Página Inicial</a></li>
+                    <li><a href="#transformacoes">O que você pode alcançar</a></li>
+                    <li><a href="#sobre_mim">Sobre mim</a></li>
+                    <li><a href="#abordagens">Abordagens</a></li>
+                    <li><a href="#sobre_trabalho">Sobre meu trabalho</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -44,14 +47,15 @@
                 </p>
                 <!-- Primeiro Botão de "Agende seu atendimento" -->
                 <div class="botao_agende_1">
-                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!" class="botao2"
-                    target="_blank">Agende seu atendimento <img class="wpp" src="img/whatsapp.png" alt="WhatsApp">
+                    <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!"
+                        class="botao2" target="_blank">Agende seu atendimento <img class="wpp" src="img/whatsapp.png"
+                            alt="WhatsApp">
                     </a>
-                </div> 
+                </div>
             </div>
         </section>
     </main>
-    <!-- Seção "O que você pode alcançar" -->  
+    <!-- Seção "O que você pode alcançar" -->
     <section id="transformacoes" class="secao_transformacao">
         <h2>O Que Você Pode Alcançar?</h2>
         <div class="cards_container">
@@ -93,11 +97,17 @@
         <div class="texto_sobre">
             <h2>Conheça mais sobre sua psicóloga</h2>
             <p>Thamyres Bomfim | CRP 19/5587</p>
-            <p>Olá! Sou Thamyres, psicóloga graduada pela Universidade Tiradentes. Tenho formação em Psicopatologia pelo FLNC, sou pós-graduanda em Terapia Cognitivo-Comportamental pela PUCRS e formanda em Terapia do Esquema pelo Insere.</p>
-            <p>Minha atuação é voltada para ajudar pacientes a compreenderem os padrões emocionais que se repetem em suas vidas, ressignificarem experiências e fortalecerem sua autonomia emocional.</p>
-            <p>Enxergo a psicoterapia como um espaço de acolhimento, mas também de coragem, onde o vínculo terapêutico é a base para o enfrentamento de dores profundas.</p>
-            <p>Se você sente que está vivendo um ciclo emocional repetitivo, se enfrenta dificuldades nos relacionamentos, lida com a ansiedade no dia a dia ou simplesmente deseja se entender melhor, será um prazer te acompanhar nesse processo com cuidado e responsabilidade.</p>
-            
+            <p>Olá! Sou Thamyres, psicóloga graduada pela Universidade Tiradentes. Tenho formação em Psicopatologia pelo
+                FLNC, sou pós-graduanda em Terapia Cognitivo-Comportamental pela PUCRS e formanda em Terapia do Esquema
+                pelo Insere.</p>
+            <p>Minha atuação é voltada para ajudar pacientes a compreenderem os padrões emocionais que se repetem em
+                suas vidas, ressignificarem experiências e fortalecerem sua autonomia emocional.</p>
+            <p>Enxergo a psicoterapia como um espaço de acolhimento, mas também de coragem, onde o vínculo terapêutico é
+                a base para o enfrentamento de dores profundas.</p>
+            <p>Se você sente que está vivendo um ciclo emocional repetitivo, se enfrenta dificuldades nos
+                relacionamentos, lida com a ansiedade no dia a dia ou simplesmente deseja se entender melhor, será um
+                prazer te acompanhar nesse processo com cuidado e responsabilidade.</p>
+
         </div>
     </section>
 
@@ -123,48 +133,51 @@
 
     <!-- Seção "Sobre Meu trabalho" -->
     <section id="sobre_trabalho" class="faq">
-            <div class="faq_texto">
-                <h2>Sobre o Meu Trabalho:</h2>
-            </div>
+        <div class="faq_texto">
+            <h2>Sobre o Meu Trabalho:</h2>
+        </div>
 
-            <div class="faq_conteudo">
-                <div class="faq_item">
-                    <button class="faq_question">Sessão inicial (50 min) <span class="plus"> &plus; </span></button>
-                    <div class="faq_answer">
-                        <p>A primeira sessão é a anamnese, é como uma entrevista em que conversamos sobre suas demandas
-                    principais e traçamos metas para que eu possa preparar um plano de terapêutico.</p>
-                    </div>
-                </div>
-
-                <div class="faq_item">
-                    <button class="faq_question">Plano terapêutico personalizado <span class="plus"> &plus; </span> </button>
-                    <div class="faq_answer">
-                        <p>A partir da avaliação, definimos estratégias que combinam a Terapia de Esquemas e TCC.</p>
-                    </div>
-                </div>
-
-                <div class="faq_item">
-                    <button class="faq_question">Intervenções práticas e reflexões profundas <span class="plus"> &plus; </span></button>
-                    <div class="faq_answer">
-                        <p>Técnicas de reestruturação cognitiva, trabalho de esquemas e fortalecimento do seu adulto saudável.</p>
-                    </div>
-                </div>
-
-                <div class="faq_item">
-                    <button class="faq_question">As sessões são sigilosas? <span class="plus"> &plus; </span> </button>
-                    <div class="faq_answer">
-                        <p>Acompanhamos seu progresso, ajustamos o rumo e fortalecemos os resultados.</p>
-                    </div>
+        <div class="faq_conteudo">
+            <div class="faq_item">
+                <button class="faq_question">Sessão inicial (50 min) <span class="plus"> &plus; </span></button>
+                <div class="faq_answer">
+                    <p>A primeira sessão é a anamnese, é como uma entrevista em que conversamos sobre suas demandas
+                        principais e traçamos metas para que eu possa preparar um plano de terapêutico.</p>
                 </div>
             </div>
+
+            <div class="faq_item">
+                <button class="faq_question">Plano terapêutico personalizado <span class="plus"> &plus; </span>
+                </button>
+                <div class="faq_answer">
+                    <p>A partir da avaliação, definimos estratégias que combinam a Terapia de Esquemas e TCC.</p>
+                </div>
+            </div>
+
+            <div class="faq_item">
+                <button class="faq_question">Intervenções práticas e reflexões profundas <span class="plus"> &plus;
+                    </span></button>
+                <div class="faq_answer">
+                    <p>Técnicas de reestruturação cognitiva, trabalho de esquemas e fortalecimento do seu adulto
+                        saudável.</p>
+                </div>
+            </div>
+
+            <div class="faq_item">
+                <button class="faq_question">As sessões são sigilosas? <span class="plus"> &plus; </span> </button>
+                <div class="faq_answer">
+                    <p>Acompanhamos seu progresso, ajustamos o rumo e fortalecemos os resultados.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
     <!-- Segundo Botão de "Agende seu atendimento" -->
     <div class="botao_agende_2">
         <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!" class="botao"
-        target="_blank">Agende seu atendimento <img class="wpp" src="img/whatsapp.png" alt="WhatsApp">
+            target="_blank">Agende seu atendimento <img class="wpp" src="img/whatsapp.png" alt="WhatsApp">
         </a>
-    </div> 
+    </div>
 
 
     <!-- Seção "Contatos" -->
@@ -173,25 +186,26 @@
     </div>
     <section id="contatos" class="secao_contatos">
         <div class="contato">
-            
-           <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!" class="botao_whatsapp"
-            target="_blank"><img class="whats" src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp"></a> 
 
-            <a href="https://www.instagram.com" class="botao_instagram"
-            target="_blank"><img class="insta" src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a> 
+            <a href="https://wa.me/5599999999999?text=Olá,%20quero%20saber%20mais%20sobre%20as%20sessões!"
+                class="botao_whatsapp" target="_blank"><img class="whats"
+                    src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp"></a>
 
-            <a href="https://mail.google.com" class="botao_email"
-            target="_blank"><img class="email" src="https://img.icons8.com/color/48/000000/apple-mail.png" alt="Email"></a>
-            
+            <a href="https://www.instagram.com" class="botao_instagram" target="_blank"><img class="insta"
+                    src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+
+            <a href="https://mail.google.com" class="botao_email" target="_blank"><img class="email"
+                    src="https://img.icons8.com/color/48/000000/apple-mail.png" alt="Email"></a>
+
         </div>
         <div class="foto_contato">
             <img src="img/_DSC7247.jpg" alt="Foto de Thamyres">
-        </div>       
+        </div>
     </section>
 
     <!-- Rodapé -->
-    <footer> 
-        <p> &copy; 2025 Thamyres Bomfim. Todos os direitos reservados.</p> 
+    <footer>
+        <p> &copy; 2025 Thamyres Bomfim. Todos os direitos reservados.</p>
     </footer>
 
     <!--Animação do FAQ-->

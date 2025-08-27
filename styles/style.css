@@ -75,6 +75,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   z-index: 10;
 }
 
@@ -138,8 +139,9 @@ ul li a:hover::after {
 
 /* Estilo do logo */
 #logo {
-  width: 40px;
-  height: 40px;
+  padding-left: 32.5px;
+  width: 155.4px;
+  height: 72.6px;
 }
 
 /* Estilo do texto do Cabeçalho */
@@ -194,11 +196,12 @@ ul li a:hover::after {
 /* Seção "O que você pode alcançar" - layout */
 .secao_transformacao {
   width: 100%;
-  height: 1200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 /* Estilo do h2 da Seção Transformação*/
 .secao_transformacao h2{
@@ -211,7 +214,7 @@ ul li a:hover::after {
 
 /* Layout do cards da Seção "O que você pode alcançar" */
 .cards_container {
-  max-width: 1500px;
+  max-width: 75%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -230,7 +233,7 @@ ul li a:hover::after {
 /* Estilo dos títulos dos cards  */
 .card h3 {
   margin-top: 0;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -238,7 +241,7 @@ ul li a:hover::after {
 /* Estilo dos textos dos cards  */
 .card p {
   margin: 10px 0 0;
-  font-size: 25px;
+  font-size: 1.4rem;
 }
 
 /* Estilo geral dos cards */
@@ -246,8 +249,8 @@ ul li a:hover::after {
   background-color: rgb(252, 246, 237);
   border: solid;
   border: 1px;
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: 20%;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -576,3 +579,173 @@ html,body{
   overflow-x: hidden;
 }
 
+/* --- RESPONSIVIDADE --- */
+
+.dropdown-trigger{
+  display: none;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  #text-cabecalho ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .texto_inicio {
+    width: 70%;
+    padding-left: 50px;
+  }
+
+  .secao_transformacao {
+    height: auto;
+    /* deixa crescer conforme o conteúdo */
+    padding: 40px 20px;
+  }
+
+  .texto_sobre {
+    position: relative;
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .dropdown {
+    position: relative;
+    /* Define o contexto de posicionamento para os itens internos */
+    display: inline-block;
+    /* Garante que o dropdown tenha o tamanho do seu conteúdo */
+  }
+
+  .dropdown-trigger {
+    /* Estilo para o botão que abre o menu, por exemplo */
+    display: block;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    /* Oculta o menu por padrão */
+    position: absolute;
+    /* Posiciona o menu absolutamente */
+    background-color: #fff;
+    /* Cor de fundo do menu */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+    z-index: 1;
+    /* Garante que o menu fique por cima de outros elementos */
+    min-width: 160px;
+    /* Largura mínima para o menu */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    padding: 0;
+    /* Remove o padding padrão da ul */
+    margin: 0;
+    /* Remove o margin padrão da ul */
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    /* Exibe o menu quando o mouse está sobre o contêiner */
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  #logo {
+    padding-left: 0;
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #text-cabecalho ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .texto_inicio {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto_inicio h2 {
+    font-size: 36px;
+  }
+
+  .texto_inicio h3 {
+    font-size: 20px;
+  }
+
+  .texto_inicio p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .cards_container {
+    gap: 20px;
+    align-items: center;
+  }
+  .cards_container {
+    width: 90%;
+    height: auto;
+  }
+  .card {
+    width: 60%;
+    height: auto;
+  }
+
+  .secao_sobre {
+    height: auto;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .texto_sobre {
+    width: 100%;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .faq {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .faq_texto h2 {
+    text-align: center;
+  }
+
+  .botao_agende_1,
+  .botao_agende_2 {
+    justify-content: center;
+  }
+
+  .secao_contatos {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .contato {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .foto_contato img {
+    width: 100px;
+    height: 100px;
+  }
+}

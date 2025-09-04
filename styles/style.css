@@ -155,12 +155,12 @@ ul li a:hover::after {
 #inicio {
   background-image: url('../img/_DSC7225.jpg');
   background-size: cover;
-  border-radius: 3rem;
   margin-bottom: 40px;
 }
 
 /* Página Inicial - layout */
 .secao_inicio {
+  border-radius: 3rem;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -647,7 +647,11 @@ html,body{
 
 /* Celulares */
 @media (max-width: 768px) {
-  
+
+  #inicio {
+  background-image: url('../img/Untitled-3.png')
+  } 
+
   /* Mostre o botão dropdown em mobile */
   .dropdown {
     position: absolute;
@@ -670,11 +674,6 @@ html,body{
   #logo {
     margin: 0 auto;
     padding: 0;
-  }
-  
-  /* Ajuste o texto inicial para não ficar embaixo do menu */
-  .texto_inicio {
-    padding-top: 60px;
   }
 
   .dropdown-menu {
@@ -703,9 +702,16 @@ html,body{
   .dropdown:hover .dropdown-menu{
     display: block;
   }
+  .secao_inicio{
+    border-radius: 0;
+    height: auto;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
 
   .texto_inicio {
     width: 100%;
+    margin-top: 100vh;
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -737,14 +743,20 @@ html,body{
     height: auto;
   }
 
+  #sobre_mim {
+  background-image: url('../img/Artboard 1.png');
+  padding-top: 170px;
+}
+
   .secao_sobre {
+
     height: auto;
     padding: 40px 20px;
     align-items: center;
   }
-
+  
   .texto_sobre {
-    width: 100%;
+    margin-top: -800px;
     font-size: 1rem;
     padding: 20px;
   }

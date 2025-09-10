@@ -205,11 +205,14 @@ ul li a:hover::after {
 }
 /* Estilo do h2 da Seção Transformação*/
 .secao_transformacao h2{
-  color: #000000;
+  color: #E6DCCF;
   text-align: center;
   font-weight: bold;
   font-size: 2.2rem;
   margin-bottom: 50px;
+  background-color: #704d49;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 /* Layout do cards da Seção "O que você pode alcançar" */
@@ -270,12 +273,12 @@ ul li a:hover::after {
 
 /* Estilo do texto da Seção Sobre Mim*/
 .texto_sobre {
-  margin-left: 200px;
+  margin-left: 100px;
   font-size: 1.2rem;
   position: absolute;
   width: 500px;
   padding: 30px;
-    color: black;
+  color: black;
 }
 /* Background da Seção Sobre Mim*/
 #sobre_mim {
@@ -297,15 +300,18 @@ ul li a:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
 }
 /* Estilo do h2 da Seção Abordagens*/
 .secao_abordagens h2{
-  color: #47352f;
+  color: #E6DCCF;
   text-align: center;
   font-weight: bold;
   font-size: 2.2rem;
   margin-bottom: 50px;
+  background-color: #704d49;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 /* Estilo do h3 da Seção Abordagens*/
@@ -497,23 +503,33 @@ ul li a:hover::after {
   justify-content: center;
   align-items: center;
 }
+.meus_contatos{
+  text-align: center;
+  margin-top: 2.2rem;
+}
 
 .meus_contatos h2 {
-  justify-content: center;
-  display: flex;
-  margin: 100px 0px 0px;
+  color: #E6DCCF;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  background-color: #704d49;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 /* Estilo da Seção Contatos */
 .secao_contatos{
   background-color: #fcf6ed;
   border-radius: 20px;
-  padding: 40px 0px;
+  padding-top: 2.2rem;
+  padding-bottom: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   text-align: center;
   align-items: center;
   max-width: 400px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 /* Formatação da Seção Contatos */
 .contato {
@@ -548,6 +564,8 @@ ul li a:hover::after {
 /* Formatação da foto da Seção Vontatos */
 .foto_contato{
   margin-top: 20px;
+  padding-bottom: 1.5rem;
+  padding-top: 0.2rem;
 }
 /* Estilo da foto da Seção Contatos */
 .foto_contato img{
@@ -635,7 +653,10 @@ html,body{
   .secao_transformacao {
     height: auto;
     /* deixa crescer conforme o conteúdo */
-    padding: 40px 20px;
+    padding: 20px, 20px;
+  }
+  .secao_transformacao h2 {
+    width: 300px;
   }
 
   .texto_sobre {
@@ -749,16 +770,16 @@ html,body{
 }
 
   .secao_sobre {
-
+    font-size: small;
     height: auto;
-    padding: 40px 20px;
+    padding: non;
     align-items: center;
   }
   
   .texto_sobre {
     margin-top: -800px;
-    font-size: 1rem;
-    padding: 20px;
+    font-size: small;
+    padding: 20px; 
   }
 
   .faq {
@@ -775,9 +796,14 @@ html,body{
     justify-content: center;
   }
 
+  .meus_contatos h2{
+    width: 80%;
+  }
+
   .secao_contatos {
-    max-width: 100%;
-    margin: 20px;
+    max-width: 80%;
+    margin-left: 2.6rem;
+    margin-bottom: 2rem;
   }
 
   .contato {
@@ -798,8 +824,8 @@ html,body{
 
   
   .secao_abordagens {
-      padding-top: 9rem;
-      padding-bottom: 11rem;
+    padding-top: 9rem;
+    padding-bottom: 11rem;
   }
 
   .faq_conteudo {

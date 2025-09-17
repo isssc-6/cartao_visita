@@ -140,8 +140,8 @@ ul li a:hover::after {
 /* Estilo do logo */
 #logo {
   padding-left: 32.5px;
-  width: 155.4px;
-  height: 72.6px;
+  width: 155px;
+  height: auto;
 }
 
 /* Estilo do texto do Cabeçalho */
@@ -177,7 +177,7 @@ ul li a:hover::after {
   align-items: start;
   width: 30%;
   border-radius: 5px;
-  padding-left: 200px;
+  padding-left: 150px;
 }
 /* Estilo dos títulos da Página Inicial */
 .texto_inicio h2{
@@ -290,7 +290,10 @@ ul li a:hover::after {
   
 }
 
-#sobre_min p { margin-bottom: 1em; }
+#sobre_min p { 
+  margin-bottom: 1em;
+  font-size: small;
+ }
 #sobre_min h2 { margin-bottom: 1em; }
 
 /* Layout da Seção Abordagens*/
@@ -645,10 +648,7 @@ html,body{
     justify-content: center;
   }
 
-  .texto_inicio {
-    width: 70%;
-    padding-left: 50px;
-  }
+
 
   .secao_transformacao {
     height: auto;

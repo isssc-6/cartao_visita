@@ -500,7 +500,7 @@ ul li a:hover::after {
 }
 /* Estilo do Botão2 */
 .botao_agende_2 {
-  background-color: #dcc7ab;
+  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -509,6 +509,7 @@ ul li a:hover::after {
 .meus_contatos{
   text-align: center;
   margin-top: 2.2rem;
+  width: 100px;
 }
 
 .meus_contatos h2 {
@@ -526,13 +527,12 @@ ul li a:hover::after {
 .secao_contatos{
   background-color: #fcf6ed;
   border-radius: 20px;
-  padding-top: 2.2rem;
+  padding-top: 5rem;
   padding-bottom: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   text-align: center;
   align-items: center;
-  max-width: 400px;
-  margin: 20px auto;
+  
 }
 /* Formatação da Seção Contatos */
 .contato {
@@ -540,8 +540,13 @@ ul li a:hover::after {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   gap: 60px;
   margin-bottom: 30px;
+}
+
+.posts{
+  width: 20rem;
 }
 
 /* Estilo do icone do whatsapp */
@@ -801,14 +806,12 @@ html,body{
   }
 
   .secao_contatos {
-    max-width: 80%;
-    margin-left: 2.6rem;
-    margin-bottom: 2rem;
+    width: auto;
   }
 
   .contato {
     gap: 30px;
-    flex-wrap: wrap;
+    
   }
 
   .foto_contato img {

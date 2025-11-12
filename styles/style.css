@@ -547,6 +547,7 @@ ul li a:hover::after {
 
 .posts{
   width: 20rem;
+  border-radius: 5%;
 }
 
 /* Estilo do icone do whatsapp */

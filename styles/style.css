@@ -153,7 +153,7 @@ ul li a:hover::after {
 
 /* Background da Página Inicial */
 #inicio {
-  background-image: url('../img/_DSC7225.jpg');
+  background-image: url('../img/DSC7225.jpg');
   background-size: cover;
   margin-bottom: 40px;
 }
